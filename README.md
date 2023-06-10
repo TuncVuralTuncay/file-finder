@@ -4,7 +4,7 @@
 # Supported platforms 
 | Name    	| Support   	|
 |---------	|-----------	|
-| Linux   	|✔️    	        |
-| Windows 	|? 	            |
-| MacOS   	|? 	            |
+| Linux   	|✔️    	     |
+| Windows 	|✔️          |
+| MacOS   	|? 	          |
 
