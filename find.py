@@ -1,20 +1,18 @@
 import os
 
-rootdir = "."
+rootdir = "/"
 skip_dirs = []
 def findViaExtensionName():
-    ext = str(input("Enter extension name : "))
+    ext = str(input("Enter extension name: "))
 
-    print("Finding please wait.....")
-    os.system("cd /")
+    print("Finding, please wait...")
     for subdir, dirs, files in os.walk(rootdir, topdown=True):
         dirs[:] = [d for d in dirs if d not in skip_dirs]
         for file in files:
-            if file.endswith("."+ext):
+            if file.endswith(ext):
                 filepath = subdir + os.sep + file
                 try:
-                    print()
-                    print(f"{filepath}")
+                    print(filepath)
                 except UnicodeDecodeError as e:
                     print(f"Error: {e} in {filepath}")
 def findViaFileName():
